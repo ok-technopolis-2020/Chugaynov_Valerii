@@ -1,1 +1,1 @@
-"# Chugaynov_Valerii" 
+Chugaynov_Valerii
