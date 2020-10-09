@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+</head>
+<body>
+<header class="header">
+    <h1 class="title">todos</h1>
+</header>
+<div class="form">
+    <section class="control_section">
+        <button class="control_add_button">add</button>
+        <label class="control_label">
+            <input class="control_add_text" type="text" placeholder="What needs to be done?"/>
+        </label>
+    </section>
+    <section class="items_section">
+        <ul class="items_ul">
+            <li class="items_li">
+                <label class="items_label">
+                    <input class="items_checkbox" type="checkbox" name="item_checkbox_name" value="HTML">
+                    <span class="items_li_span">HTML</span>
+                </label>
+                <button class="items_delete_button">delete</button>
+            </li>
+
+            <li class="items_li">
+                <label class="items_label">
+                    <input class="items_checkbox" type="checkbox" name="item_checkbox_name" value="CSS" id="">
+                    <span class="items_li_span">CSS</span>
+                </label>
+                <button class="items_delete_button">delete</button>
+            </li>
+
+            <li class="items_li">
+                <label class="items_label">
+                    <input class="items_checkbox" type="checkbox" name="item_checkbox_name" value="JS">
+                    <span class="items_li_span">JS</span>
+                </label>
+                <button class="items_delete_button">delete</button>
+            </li>
+
+            <li class="items_li">
+                <label class="items_label">
+                    <input class="items_checkbox" type="checkbox" name="item_checkbox_name" value="JS tools">
+                    <span class="items_li_span">JS tools</span>
+                </label>
+                <button class="items_delete_button">delete</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="stat_section">
+        <span class="stat_span">3 items left</span>
+
+
+        <label class="stat_label">
+            <input class="stat_radio" name="stat_radio_name" type="radio" value="All" checked>
+            <span class="stat_span">All</span>
+        </label>
+
+        <label>
+            <input class="stat_radio" name="stat_radio_name" type="radio" value="Active">
+            <span class="stat_span">Active</span>
+        </label>
+
+        <label>
+            <input class="stat_radio" name="stat_radio_name" type="radio" value="Completed">
+            <span class="stat_span">Completed</span>
+        </label>
+
+
+        <button class="stat_button">Clear completed</button>
+    </section>
+</div>
+
+</body>
+</html>
