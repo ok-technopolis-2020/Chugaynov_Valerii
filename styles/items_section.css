@@ -1,0 +1,71 @@
+.items_section {
+    background-color: white;
+    min-height: 253px;
+}
+
+.items_ul {
+    list-style-type: none;
+    clear: both;
+}
+
+.items_li {
+    box-shadow: inset 0 -1px #E6E6E6;
+    clear: both;
+}
+
+.items_li:hover {
+    background-color: #FAFAFA;
+}
+
+.items_li_div {
+    min-height: 64px;
+    padding: 0 4px 0 12px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.items_checkbox {
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px #E6E6E6 solid;
+    border-radius: 50%;
+}
+
+.items_checkbox:checked {
+    background: url("../icons/completed.svg") no-repeat center;
+    appearance: none;
+    -webkit-appearance: none;
+    border-color: #5DC2AF;
+}
+
+.items_li_span {
+    display: flex;
+    flex-grow: 1;
+    word-break: break-word;
+    font-size: 24px;
+    padding: 12px 0;
+    border: 0;
+    background: none;
+}
+
+.items_delete_button {
+    text-indent: -9999px;
+    background: url("../icons/close.svg") no-repeat center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    margin: -9999px 4px 0 12px;
+}
+
+.items_li_div:hover .items_delete_button {
+    margin-top: 0;
+}
+
+.items_delete_button:focus {
+    margin-top: 0;
+}
