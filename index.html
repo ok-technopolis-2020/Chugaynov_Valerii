@@ -3,107 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>todo</title>
+    <link rel="stylesheet" type="text/css" href="styles/form.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/control_section.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/items_section.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/stat_section.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/common_style.css"/>
 </head>
 <body>
-<header class="header">
-    <h1 class="title">todos</h1>
-</header>
+
 <div class="form">
-    <section class="control_section">
-        <div class="control_section_div">
-            <button class="control_select_all_button">Select all</button>
-            <label class="control_label">
-                <input class="control_add_text" type="text"
+    <header class="header">
+        <h1 class="title">todos</h1>
+    </header>
+
+    <main class="form_main">
+        <section class="control_section">
+            <div class="control_select_all_div">
+                <button class="control_select_all_button">Select all</button>
+            </div>
+            <div class="control_add_div">
+                <input class="control_add_input" type="text"
                        placeholder="What needs to be done?"
                        aria-label="Add new item" autofocus/>
-            </label>
-        </div>
-    </section>
+            </div>
+        </section>
 
 
-    <section class="items_section">
-        <ul class="items_ul">
-            <li class="items_li">
-                <div class="items_li_div">
-                    <label class="items_label">
+        <section class="items_section">
+            <ul class="items_ul">
+                <li class="items_li">
+                    <div class="items_li_div">
                         <input class="items_checkbox" type="checkbox"
                                name="item_checkbox_name" value="HTML"
                                aria-label="Checkbox for HTML task">
                         <span class="items_li_span">HTML</span>
-                    </label>
-                    <button class="items_delete_button" aria-label="Delete HTML from todo list">delete</button>
-                </div>
-            </li>
+                        <button class="items_delete_button" aria-label="Delete HTML from todo list">delete</button>
+                    </div>
+                </li>
 
-            <li class="items_li">
-                <div class="items_li_div">
-                    <label class="items_label">
+                <li class="items_li">
+                    <div class="items_li_div">
                         <input class="items_checkbox" type="checkbox"
                                name="item_checkbox_name"
                                aria-label="Checkbox for CSS task">
                         <span class="items_li_span">CSS</span>
-                    </label>
-                    <button class="items_delete_button" aria-label="Delete CSS from todo list">delete</button>
-                </div>
-            </li>
+                        <button class="items_delete_button" aria-label="Delete CSS from todo list">delete</button>
+                    </div>
+                </li>
 
-            <li class="items_li">
-                <div class="items_li_div">
-                    <label class="items_label">
+                <li class="items_li">
+                    <div class="items_li_div">
                         <input class="items_checkbox" type="checkbox"
                                name="item_checkbox_name"
                                aria-label="Checkbox for JS task">
                         <span class="items_li_span">JS</span>
+                        <button class="items_delete_button" aria-label="Delete JS from todo list">delete</button>
+                    </div>
+                </li>
+
+                <li class="items_li">
+                    <div class="items_li_div">
+                        <input class="items_checkbox" type="checkbox"
+                               name="item_checkbox_name"
+                               aria-label="Checkbox for JS tools task">
+                        <span class="items_li_span">JS tools</span>
+                        <button class="items_delete_button" aria-label="Delete JS tools from todo list">delete</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="stat_section">
+            <div class="stat_div">
+                <div class="stat_counter">3 items left</div>
+            </div>
+
+            <div class="stat_div">
+                <div class="stat_filter" role="group" aria-label="Filter tasks by status">
+                    <label class="stat_filter_label">
+                        <input class="stat_radio" type="radio"
+                               name="stat_radio_name" value="All"
+                               aria-label="Select all tasks">
+                        <span class="stat_span">All</span>
                     </label>
-                    <button class="items_delete_button" aria-label="Delete JS from todo list">delete</button>
+
+                    <label class="stat_filter_label">
+                        <input class="stat_radio" type="radio"
+                               name="stat_radio_name" value="Active"
+                               aria-label="Select active tasks">
+                        <span class="stat_span">Active</span>
+                    </label>
+
+
+                    <label class="stat_filter_label">
+                        <input class="stat_radio" type="radio"
+                               name="stat_radio_name" value="Completed"
+                               aria-label="Select completed tasks">
+                        <span class="stat_span">Completed</span>
+                    </label>
                 </div>
-            </li>
+            </div>
 
-            <li class="items_li">
-                <label class="items_label">
-                    <input class="items_checkbox" type="checkbox"
-                           name="item_checkbox_name"
-                           aria-label="Checkbox for JS tools task">
-                    <span class="items_li_span">JS tools</span>
-                </label>
-                <button class="items_delete_button" aria-label="Delete JS tools from todo list">delete</button>
-            </li>
-        </ul>
-    </section>
-
-    <section class="stat_section">
-        <div class="stat_div">
-            <div class="stat_counter">3 items left</div>
-        </div>
-
-        <div class="stat_div" role="group">
-            <label class="stat_filter">
-                <input class="stat_radio" type="radio"
-                       name="stat_radio_name" value="All"
-                       aria-label="Select all tasks">
-                <span class="stat_span">All</span>
-            </label>
-
-            <label class="stat_filter">
-                <input class="stat_radio" type="radio"
-                       name="stat_radio_name" value="Active"
-                       aria-label="Select active tasks">
-                <span class="stat_span">Active</span>
-            </label>
-
-
-            <label class="stat_filter">
-                <input class="stat_radio" type="radio"
-                       name="stat_radio_name" value="Completed"
-                       aria-label="Select completed tasks">
-                <span class="stat_span">Completed</span>
-            </label>
-        </div>
-
-        <div class="stat_div">
-            <button class="stat_button" aria-label="Clear completed tasks from todo list">Clear completed</button>
-        </div>
-    </section>
+            <div class="stat_div">
+                <button class="stat_button" aria-label="Clear completed tasks from todo list">Clear completed</button>
+            </div>
+        </section>
+    </main>
 </div>
 
 </body>
